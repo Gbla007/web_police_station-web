@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <title>Report Incident</title>
+    <style>
+      header {
+    background-color: #050a2e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+  }
+  h1 {
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  nav {
+    display: flex;
+    
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  
+nav ul li a:hover{
+  transition: opacity 1s ease-in-out;
+  color: blue;
+}
+  
+  
+  footer {
+    background-color: #050a2e;
+    color: #fff;
+    padding: 1rem;
+    text-align:center;
+  }
+  
+     .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      .form-input {
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      .form-submit {
+        width: 20%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+      }
+      .form-error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="IMAGES/police logo.jpg" width="5%" length="5%">
+      <h1>Mile-91<br>Police Station</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html"target="_blank">Home</a></li>
+          <li><a href="Aboutus.html"target="_blank">About Us</a></li>
+          <li><a href="Service.html"target="_blank">Services</a></li>
+          <li><a href="contact.html"target="_blank">Contact Us</a></li>
+          <li><a href="FAQ.html"target="_blank">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="form-container">
+      <h1>Report Incident</h1>
+      <form id="incident-form">
+        <input class="form-input" type="text" id="incident-location" placeholder="Incident Location">
+        <input class="form-input" type="text" id="incident-description" placeholder="Incident Description">
+        <input class="form-submit" type="submit" value="Submit">
+      </form>
+      <div id="form-error" class="form-error"></div>
+    </div>
+    <footer>
+      <p>Copyright © 2023 Mile91 Police Department</p>
+    </footer>
+    <script>
+      document.querySelector("#incident-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const location = document.querySelector("#incident-location").value;
+        const description = document.querySelector("#incident-description").value;
+        if (location === "" || description === "") {
+          document.querySelector("#form-error").innerHTML = "Please fill out both fields.";
+        } else {
+          // submit form data to server here
+          console.log("Location:", location);
+          console.log("Description:", description);
+        }
+      });
+    </script>
+  </body>
+</html>

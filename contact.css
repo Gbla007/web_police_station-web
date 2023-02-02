@@ -1,0 +1,143 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background:url();
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #050a2e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  #man{
+    text-align: left;
+  }
+  h1 {
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  
+  nav {
+    display: flex;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover{
+    transition: opacity 1s ease-in-out;
+    color: blue;
+  }
+  
+  
+  footer {
+    background-color: #050a2e;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+#contact {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1rem;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 5px #ccc;
+  }
+  
+  .form-group {
+    margin: 1rem 0;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  #contact-info {
+    margin-top: 2rem;
+  }
+  
+  #contact-info p {
+    margin-bottom: 1rem;
+  }
+  
